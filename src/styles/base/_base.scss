@@ -1,0 +1,30 @@
+//rem is used to resuze stuff
+//we will use pixels
+@import './settings';
+
+html {
+    font-size: 62.5%
+    //62.5% relates rems to pixels by a factor of 10
+}
+
+body {
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: $m-size;
+}
+
+//handles big picture stuff and is loaded in by styles.scss
+
+//following is for how the mouse looks when over buttons
+button{
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor:default
+}
+
+//modifier- 2 hyphens
+
+.is-active{
+    font-weight: bold;
+}
